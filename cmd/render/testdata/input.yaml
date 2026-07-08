@@ -1,8 +1,0 @@
-title: "locally rendered list"
-instances:
-  - template: custom-rules
-    params:
-      rules: |
-        line1##ruleA
-        line2###ruleB
-  - template: unknown
