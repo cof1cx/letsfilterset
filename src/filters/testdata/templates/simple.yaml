@@ -1,0 +1,38 @@
+title: Template title
+params:
+  - name: boolean_param
+    description: A boolean parameter
+    type: checkbox
+    default: true
+  - name: another_boolean
+    description: A disabled boolean parameter
+    type: checkbox
+    default: false
+  - name: string_param
+    description: A string parameter
+    default: René Coty
+    type: string
+  - name: string_list
+    description: A list of strings
+    type: list
+    default: [ "abc", "123" ]
+tags: ["tag1", "tag2"]
+template: |
+  {{#each string_list}}
+  {{ . }}
+  {{/each}}
+tests:
+  - params:
+      boolean_param: true
+      string_param: ignored
+      string_list:
+        - one
+        - two
+        - three
+    output: |
+      one
+      two
+      three
+---
+
+## Test description title

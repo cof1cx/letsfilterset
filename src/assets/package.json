@@ -1,0 +1,28 @@
+{
+  "name": "letsblockit-assets",
+  "targets": {
+    "default": {
+      "source": [
+        "main.js",
+        "main.scss"
+      ],
+      "context": "browser",
+      "distDir": "../../data/assets/dist/"
+    }
+  },
+  "scripts": {
+    "clean": "rm -rf ../../data/assets/dist/ .parcel-cache/",
+    "build": "parcel build",
+    "watch": "parcel watch",
+    "lint": "eslint --fix ."
+  },
+  "devDependencies": {
+    "@parcel/compressor-gzip": "^2.12.0",
+    "@parcel/transformer-sass": "^2.12.0",
+    "@tabler/icons": "^2.47.0",
+    "bootstrap": "^5.3.3",
+    "eslint": "^8.57.0",
+    "htmx.org": "^1.9.11",
+    "parcel": "^2.12.0"
+  }
+}
