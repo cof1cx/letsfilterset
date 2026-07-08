@@ -1,2 +1,2 @@
-# letsfilterset
-Delete useless nags, be hyperfocused. Join the uBlock Origin filter set. 
+> [!WARNING]
+> ## This project is shut down and archived.
